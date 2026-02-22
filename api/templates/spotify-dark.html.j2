@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg width="480" height="133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <foreignObject width="480" height="133">
         <div xmlns="http://www.w3.org/1999/xhtml" class="container">
@@ -135,3 +136,28 @@
         </div>
     </foreignObject>
 </svg>
+=======
+{% extends "base.html.j2" %}
+
+{% block container_styles %}
+/* Dark theme - uses customizable background and border */
+background-color: var(--background-color);
+border: 1px solid var(--border-color);
+{% endblock %}
+
+{% block theme_styles %}
+/* Dark theme specific overrides */
+.song-text {
+    font-weight: 500;
+}
+
+.artist-text {
+    opacity: 0.9;
+}
+
+.cover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+{% endblock %}
+>>>>>>> upstream/main
